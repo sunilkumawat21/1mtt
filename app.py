@@ -47,12 +47,12 @@ def predict_note_authentication(Gender,Glucose,BP,SkinThickness,Insulin, BMI, Pe
 def main():
     
     html_temp = """
-   <div class="" style="background-color:black;" >
+   <div class="" style="background-color:red;" >
    <div class="clearfix">           
    <div class="col-md-12">
    <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
    <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
-   <center><p style="font-size:25px;color:white;margin-top:10px;">Experiment Deployment By Sudhanshu Vijay</p></center> 
+   <center><p style="font-size:25px;color:white;margin-top:10px;">Experiment Deployment By sunil kumawat</p></center> 
    </div>
    </div>
    </div>
@@ -73,7 +73,7 @@ def main():
       result=predict_note_authentication(Gender,Glucose,BP,SkinThickness,Insulin, BMI, PedigreeFunction, Age)
       st.success('Model has predicted {}'.format(result))
     if st.button("About"):
-      st.subheader("Developed by Sudhanshu Vijay")
+      st.subheader("Developed by sunil kumawat")
       st.subheader("C-Section,PIET")
 
 if __name__=='__main__':
